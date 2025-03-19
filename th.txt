@@ -1,0 +1,79 @@
+const express = require("express") //express..
+
+//express object
+
+const app = express()
+
+//https://node5.onrender.com/user/user : domain + endpoints
+//http://localhost:3000/test
+
+app.get("/test",(req,res)=>{
+
+    console.log("test api is called..")
+    res.send("hello test api is called...")
+})
+//http://localhost:3000/users
+app.get("/users",(req,res)=>{
+
+    res.json({
+        message:"user api called...",
+        data:["Raj","Dhruv","Vatsal"]
+
+    })
+})
+//http://localhost:3000/employes
+app.get("/employes",(req,res)=>{
+
+    res.json({
+        message:"user api called...",
+        data:[
+            {
+            emp_id:1,
+            Name:"Raj",
+            Salary:25000,
+            Age:20
+
+        },
+
+        {
+            emp_id:2,
+            Name:"Hetul",
+            Salary:20000,
+            Age:20
+
+        },
+        {
+            emp_id:3,
+            Name:"Dhruv",
+            Salary:22000,
+            Age:20
+
+        },
+        {
+            emp_id:4,
+            Name:"Vatsal",
+            Salary:35000,
+            Age:20
+
+        },
+        {
+            emp_id:1,
+            Name:"Avsar",
+            Salary:30000,
+            Age:20
+
+        },
+    ]
+
+    })
+})
+
+
+
+
+//server creation
+
+const PORT =3000
+app.listen(PORT,()=>{
+    console.log("server started on port number",PORT)
+})
