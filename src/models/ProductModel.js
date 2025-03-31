@@ -22,10 +22,10 @@ const productSchema = new Schema({
         type:String
 
     },
-    rating:{
-        type:Number
+    // rating:{
+    //     type:Number
 
-    },
+    // },
 
     businessId:{
         type:Schema.Types.ObjectId,

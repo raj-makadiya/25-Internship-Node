@@ -26,6 +26,26 @@ const complaintsSchema = new Schema({
     fileddate:{
         type:Date,
     },
+
+    categoryType: {
+    enum: [
+      
+      'Electronics',
+      'Clothing & Apparel',
+      'Footwear',
+      'Beauty & Personal Care',
+      'Home & Kitchen',
+      'Grocery & Food',
+      'Automobiles & Accessories',
+      'Books & Stationery',
+      'Sports & Fitness',
+      'Toys & Baby Products',
+      'Healthcare & Medicine',
+      'Services'
+    ],
+    type:String
+    
+  },
     
     
    

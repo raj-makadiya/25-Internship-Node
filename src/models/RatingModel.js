@@ -25,7 +25,7 @@ const ratingSchema = new Schema({
 
     },
 
-    review__date:{
+    review_date:{
         type:"date",
         default: Date.now   
 

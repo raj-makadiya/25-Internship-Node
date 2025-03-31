@@ -7,6 +7,9 @@ routes.delete("/user/:id",userController.deleteUser)
 routes.get("/user/:id",userController.getUserById)
 routes.post("/user",userController.signUp)
 routes.post("/user/login",userController.loginUser)
+routes.post("/forgotpassword",userController.forgotPassword)
+routes.post("/resetPassword",userController.resetPassword)
+
 
 //v-imp
 module.exports = routes

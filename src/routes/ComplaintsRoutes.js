@@ -7,6 +7,7 @@ routes.post("/complaint",complaintController.addComplaint)
 
 routes.delete("/complaint/:id",complaintController.deleteComplaint)
 routes.get("/complaint/:id",complaintController.getComplaintById)
+routes.get("/complaintbyuserId/:userId",complaintController.getAllComplaintsByUserId)
 
 
 

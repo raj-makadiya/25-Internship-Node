@@ -8,6 +8,8 @@ routes.post("/service",serviceProviderController.signup)
 routes.delete("/service/:id",serviceProviderController.deleteService)
 routes.get("/service/:id",serviceProviderController.getServiceById)
 routes.post("/service/login",serviceProviderController.loginService)
+routes.post("/serviceForgotpassword",serviceProviderController.forgotPassword)
+routes.post("/serviceResetPassword",serviceProviderController.resetPassword)
 
 
 module.exports = routes

@@ -20,6 +20,9 @@ app.use(roleRoutes)
 const userRoutes = require("./src/routes/UserRoutes")
 app.use(userRoutes)
 
+ const contactRoutes=require("./src/routes/ContactRoutes")
+app.use(contactRoutes)
+
 const serviceProviderRoutes = require("./src/routes/ServiceProviderRoutes")
 app.use(serviceProviderRoutes)
 
